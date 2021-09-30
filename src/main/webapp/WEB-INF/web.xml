@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee;
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         <servlet>
+         <servlet-name>Login</servlet-name>
+         <servlet-class>u.user.loginServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping> 
+         <servlet-name>Login</servlet-name>
+         <url-pattern>/log</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+         <servlet-name>VideoInsert</servlet-name>
+         <servlet-class>u.user.userInsertServ</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         <servlet-name>VideoInsert</servlet-name>
+          <url-pattern>/insert</url-pattern>
+         </servlet-mapping>
+         
+          <servlet>
+         <servlet-name>VideoLogin</servlet-name>
+         <servlet-class>u.user.videoAccesss</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         <servlet-name>VideoLogin</servlet-name>
+          <url-pattern>/videologin</url-pattern>
+         </servlet-mapping>
+         
+            <servlet>
+         <servlet-name>VideoUpdate</servlet-name>
+         <servlet-class>u.user.VideoUpdateServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         <servlet-name>VideoUpdate</servlet-name>
+          <url-pattern>/update</url-pattern>
+         </servlet-mapping>
+         
+            <servlet>
+         <servlet-name>VideoDelete</servlet-name>
+         <servlet-class>u.user.DeleteVideoServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         <servlet-name>VideoDelete</servlet-name>
+          <url-pattern>/delete</url-pattern>
+         </servlet-mapping>
+         
+</web-app>
